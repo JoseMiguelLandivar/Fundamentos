@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+    int a, b, c;
+    cout << "Ingrese el primer numero";
+    cin >> a;
+    count << "Ingrese el segundo numero
+    cin >> b;
+    c = a + b
+        count << "La suma es: " << c << end;
+
+}
