@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float Parcial1, Parcial2, Parcial3;
+    float examenfinal, proyectofinal;
+    float promediofinal, notafinal;
+    cout << "Ingresar el valor del primer parcial";
+    cin >> Parcial1;
+    cout << "Ingresar el valor del segundo parcial";
+    cin >> Parcial2;
+    cout << "Ingresar el valor del tercer parcial";
+    cin >> Parcial3;
+    promediofinal = (((Parcial1 + Parcial2 + Parcial3) / 3) * 0.40);
+    cout << "El promedio parciales es: " << promediofinal << endl;
+    cout << "Ingrese la nota del examen  final: ";
+    cin >> examenfinal;
+    examenfinal = examenfinal * 0.40;
+    cout << "El promedio del examen final es: " << examenfinal << endl;
+    cout << "Ingrese la nota del proyecto final: ";
+    cin >> proyectofinal;
+    proyectofinal = proyectofinal * 0.20;
+    cout << "La nota del proyecto final es: " << proyectofinal << endl;
+
+
+    return 0;
+
+}
