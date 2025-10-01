@@ -1,0 +1,21 @@
+Algoritmo Serie
+	S<-0
+	Repetir
+		Escribir "Ingresa el numero limite: "
+		Leer n
+	Hasta Que n>0
+	Repetir
+		Escribir "Ingresa el valor de la base: "
+		Leer x
+	Hasta Que x<>0
+	i <- 1
+	factorial <- 1
+	Escribir "La serie es:"
+	Para i<-1 Hasta 1 Con Paso n Hacer
+		Escribir "x^",i,"/",factorial, "+"
+		S<- S+((x^i)/factorial)
+		factorial=factorial * (i+1)
+	FinPara
+	Escribir "La suma de la serie es:", S
+FinAlgoritmo
+
