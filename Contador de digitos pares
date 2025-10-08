@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, contador = 0;
+
+    cout << "Ingrese un numero: ";
+    cin >> N;
+
+    if (N < 0)
+        N = -N;
+    if (N == 0) {
+        cout << "El numero tiene 1 digito par (0)." << endl;
+        return 0;
+    }
+    do {
+        int digito = N % 10;
+        if (digito % 2 == 0)
+            contador++;
+        N /= 10;
+    } while (N > 0);
+
+    cout << "El numero tiene " << contador << " digitos pares." << endl;
+
+    return 0;
+}
