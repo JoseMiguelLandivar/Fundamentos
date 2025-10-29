@@ -1,0 +1,48 @@
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+
+//Prototipos
+void cargar(int vector[], int n); // Lee los datos de un arreglo
+void mostrar(int vector[], int n); // visualizar el contenido del arreglo
+float promedio(int vector[], int n);
+
+int main()
+{
+	//Llamadas a las funciones
+	int tamano, vec[MAX];
+
+	do {
+		cout << "Ingrese el tamano del vector: ";
+		cin >> tamano;
+	} while ((tamano < 0) || (tamano > MAX));
+	cargar(vec, tamano);
+	mostrar(vec, tamano);
+	cout << "El promedio es: " << promedio(vec, tamano);
+
+}
+
+
+//Declarar las funciones
+void cargar(int vector[], int n) {
+	for (int i = 0; i < n; i++) {
+		cout << "Vector[" << i << "]=";
+		cin >> vector[i];
+	}
+
+
+}
+
+void mostrar(int vector[], int n) {
+	for (int i = 0; i < n; i++) {
+		cout << "Vector[" << i << "]=" << vector[i] << endl;
+	}
+}
+
+float promedio(int vector[], int n) {
+	float suma = 0;
+	for (int i = 0; i < n; i++)
+		suma = suma + vector[i];
+	return suma / n;
+}
